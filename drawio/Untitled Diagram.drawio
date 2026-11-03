@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36">
   <diagram name="Page-1" id="tfN6ZCeid8iVf-4MO3mg">
-    <mxGraphModel dx="5420" dy="1981" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4979" dy="1893" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -70,15 +70,6 @@
         <mxCell id="wHbQeHQnOs_xXHUr79cz-20" parent="1" style="image;aspect=fixed;html=1;align=center;fontSize=12;image=img/lib/azure2/other/App_Space_Component.svg;points=[[0.5,0,0],[0.5,1,0],[0.009,0.5,0],[0.991,0.5,0],[0.982,0.325,0],[0.982,0.99,0],[0.018,0.99,0],[0.015,0.013,0]];labelPerimeter=1;" value="SPA React&amp;nbsp;&lt;div&gt;Queues position viewer&lt;/div&gt;" vertex="1">
           <mxGeometry height="68" width="56.68" x="-2438.84" y="-685" as="geometry" />
         </mxCell>
-        <mxCell id="wHbQeHQnOs_xXHUr79cz-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Single table design MVP" vertex="1">
-          <mxGeometry height="60" width="296" x="-1402" y="-92" as="geometry" />
-        </mxCell>
-        <mxCell id="wHbQeHQnOs_xXHUr79cz-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Prefix List&lt;div&gt;1. Queue = QUE&lt;/div&gt;&lt;div&gt;2. Establishment = EST&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="159" x="-1091" y="-88" as="geometry" />
-        </mxCell>
-        <mxCell id="wHbQeHQnOs_xXHUr79cz-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Scenarios" vertex="1">
-          <mxGeometry height="30" width="60" x="-1989" y="-478" as="geometry" />
-        </mxCell>
         <mxCell id="wHbQeHQnOs_xXHUr79cz-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Base domain design" vertex="1">
           <mxGeometry height="33" width="147.16" x="-2516" y="-489" as="geometry" />
         </mxCell>
@@ -103,8 +94,53 @@
         <mxCell id="wHbQeHQnOs_xXHUr79cz-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Guests" vertex="1">
           <mxGeometry height="60" width="120" x="-2614" y="-310" as="geometry" />
         </mxCell>
-        <mxCell id="wHbQeHQnOs_xXHUr79cz-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1. A user should have a unique e-mail address&lt;div&gt;2. A user can have zero or more establishments&lt;/div&gt;&lt;div&gt;3. A establishment should have a name, description and a user_id&lt;/div&gt;&lt;div&gt;4. A establishment can have zero or more queues&lt;/div&gt;&lt;div&gt;5. A queue should have a name and a establishemnt&lt;/div&gt;&lt;div&gt;6. A queue should have zero or more guests&lt;/div&gt;&lt;div&gt;7. A Guest should have a name and optionally a phone number&lt;/div&gt;&lt;div&gt;8. A Guest can be inside a queue&lt;/div&gt;&lt;div&gt;9. A user can remove a guest from queue&lt;/div&gt;&lt;div&gt;10. A user can request the next guest from the queue&lt;/div&gt;&lt;div&gt;11. A user can add new guests into the queue&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="439" x="-2094" y="-389" as="geometry" />
+        <mxCell id="wHbQeHQnOs_xXHUr79cz-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1. A user should have a unique e-mail address&lt;div&gt;&lt;div&gt;2. A user can list your establishments&lt;/div&gt;&lt;div&gt;3. A establishment should have a name, description and a user_id&lt;/div&gt;&lt;div&gt;4. A esblishment can list your queues&lt;/div&gt;&lt;div&gt;5. A queue should have a name and a establishemnt&lt;/div&gt;&lt;div&gt;6. A queue can list guests sorted FIFO&lt;/div&gt;&lt;div&gt;7. A Guest should have a name and optionally a phone number&lt;/div&gt;&lt;div&gt;8. A Guest shoud be inside a queue&lt;/div&gt;&lt;div&gt;9. A user can remove a guest from queue&lt;/div&gt;&lt;div&gt;10. A user can request the next guest from the queue&lt;/div&gt;&lt;div&gt;11. A user can add new guests into the queue&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="445" x="-2859" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-3" parent="1" style="text;whiteSpace=wrap;html=1;" value="1. Cognito User → Establishments" vertex="1">
+          <mxGeometry height="36" width="211" x="-2274" y="101" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-5" parent="1" style="text;whiteSpace=wrap;" value="PK: SUB#&lt;cognito-sub&gt;SK: EST#&lt;establishment-id&gt;" vertex="1">
+          <mxGeometry height="36" width="312" x="-2312" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-6" parent="1" style="text;whiteSpace=wrap;" value="PK: SUB#abc-123SK: EST#est-001" vertex="1">
+          <mxGeometry height="36" width="218" x="-2268" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-7" parent="1" style="text;whiteSpace=wrap;html=1;" value="Armazena os dados do estabelecimento." vertex="1">
+          <mxGeometry height="36" width="245" x="-1828" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-8" parent="1" style="text;whiteSpace=wrap;" value="PK: EST#&lt;establishment-id&gt;SK: METADATAnamedescriptionownerSubcreatedAt" vertex="1">
+          <mxGeometry height="36" width="461" x="-1911" y="137" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-9" parent="1" style="text;whiteSpace=wrap;" value="{  &quot;PK&quot;: &quot;EST#est-001&quot;,  &quot;SK&quot;: &quot;METADATA&quot;,  &quot;name&quot;: &quot;Barbearia Central&quot;,  &quot;description&quot;: &quot;Barbearia masculina&quot;,  &quot;ownerSub&quot;: &quot;abc-123&quot;,  &quot;createdAt&quot;: &quot;2026-11-03T14:00:00Z&quot;}" vertex="1">
+          <mxGeometry height="51" width="550" x="-1935" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-10" parent="1" style="text;whiteSpace=wrap;" value="PK: EST#&lt;establishment-id&gt;SK: QUEUE#&lt;queue-id&gt;namelastSequencecreatedAt" vertex="1">
+          <mxGeometry height="36" width="469" x="-2403" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-11" parent="1" style="text;whiteSpace=wrap;" value="{  &quot;PK&quot;: &quot;EST#est-001&quot;,  &quot;SK&quot;: &quot;QUEUE#queue-001&quot;,  &quot;name&quot;: &quot;Atendimento geral&quot;,  &quot;lastSequence&quot;: 0,  &quot;createdAt&quot;: &quot;2026-11-03T14:00:00Z&quot;}" vertex="1">
+          <mxGeometry height="51" width="550" x="-2452" y="409" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-12" parent="1" style="text;whiteSpace=wrap;html=1;" value="Cada convidado pertence a uma fila." vertex="1">
+          <mxGeometry height="36" width="223" x="-1598" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-13" parent="1" style="text;whiteSpace=wrap;" value="PK: QUEUE#&lt;queue-id&gt;SK: GUEST#&lt;zero-padded-sequence&gt;guestIdnameddidddphoneNumbercreatedAtcalledAtstatus" vertex="1">
+          <mxGeometry height="51" width="550" x="-1670" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-14" parent="1" style="text;whiteSpace=wrap;" value="{  &quot;PK&quot;: &quot;QUEUE#queue-001&quot;,  &quot;SK&quot;: &quot;GUEST#000001&quot;,  &quot;guestId&quot;: &quot;guest-001&quot;,  &quot;name&quot;: &quot;João&quot;,  &quot;ddi&quot;: &quot;55&quot;,  &quot;ddd&quot;: &quot;11&quot;,  &quot;phoneNumber&quot;: &quot;999999999&quot;,  &quot;createdAt&quot;: &quot;2026-11-03T14:10:00Z&quot;,  &quot;status&quot;: &quot;WAITING&quot;}" vertex="1">
+          <mxGeometry height="65" width="550" x="-1740" y="423" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-15" parent="1" style="text;whiteSpace=wrap;" value="WAITINGCALLEDCOMPLETEDNOSHOWREMOVED" vertex="1">
+          <mxGeometry height="36" width="316" x="-1631" y="499" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-16" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;&lt;p&gt;&lt;span&gt;Atributo&lt;/span&gt;&lt;/p&gt;&lt;/th&gt;&lt;th&gt;&lt;p&gt;&lt;span&gt;Valor&lt;/span&gt;&lt;/p&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;GSI1PK&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;code&gt;&lt;span&gt;QUEUE#queue-001#WAITING&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;GSI1SK&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;code&gt;&lt;span&gt;SEQ#000001&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="151" width="251" x="-1659" y="556" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-17" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;h1&gt;&lt;span&gt;6. Access Patterns — Como atender aos 11 requisitos&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;&lt;p&gt;&lt;span&gt;#&lt;/span&gt;&lt;/p&gt;&lt;/th&gt;&lt;th&gt;&lt;p&gt;&lt;span&gt;Operação&lt;/span&gt;&lt;/p&gt;&lt;/th&gt;&lt;th&gt;&lt;p&gt;&lt;span&gt;DynamoDB&lt;/span&gt;&lt;/p&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;1&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Garantir e-mail único&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Cognito&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;2&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Listar estabelecimentos do usuário&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Query &lt;/span&gt;&lt;code&gt;&lt;span&gt;PK = SUB#...&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;3&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Buscar estabelecimento&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;GetItem &lt;/span&gt;&lt;code&gt;&lt;span&gt;EST#... / METADATA&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;4&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Listar filas do estabelecimento&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Query &lt;/span&gt;&lt;code&gt;&lt;span&gt;PK = EST#...&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;5&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Buscar fila&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;GetItem &lt;/span&gt;&lt;code&gt;&lt;span&gt;EST#... / QUEUE#...&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;6&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Listar convidados FIFO&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Query GSI1 com &lt;/span&gt;&lt;code&gt;&lt;span&gt;QUEUE#...#WAITING&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;7&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Consultar dados do convidado&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;GetItem&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;8&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Associar convidado à fila&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;PK &lt;/span&gt;&lt;code&gt;&lt;span&gt;QUEUE#...&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;9&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Remover convidado&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;UpdateItem: &lt;/span&gt;&lt;code&gt;&lt;span&gt;REMOVED&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;10&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Chamar próximo convidado&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Query GSI1 + UpdateItem: &lt;/span&gt;&lt;code&gt;&lt;span&gt;CALLED&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;11&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;Adicionar convidado&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&lt;span&gt;TransactWriteItems&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="622" width="550" x="-2418" y="621" as="geometry" />
+        </mxCell>
+        <mxCell id="elf3aFCQr1T-KgwfLd_x-18" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;h1&gt;&lt;span&gt;Fluxo de chamada do próximo convidado&lt;/span&gt;&lt;/h1&gt;&lt;ol&gt;&lt;li&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;&lt;span&gt;Query no GSI1:&lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;div&gt;&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;GSI1PK = QUEUE#queue-001#WAITING&#xa;ScanIndexForward = true&#xa;Limit = 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;&lt;span&gt;Obter o primeiro convidado.&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;&lt;span&gt;Atualizar o convidado com uma condição:&lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;div&gt;&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;ConditionExpression: status = WAITING&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;&lt;span&gt;Atualizar:&lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;div&gt;&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;status = CALLED&#xa;GSI1PK = QUEUE#queue-001#CALLED&#xa;GSI1SK = SEQ#000001&#xa;calledAt = ...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="340" width="501" x="-1688" y="738" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
